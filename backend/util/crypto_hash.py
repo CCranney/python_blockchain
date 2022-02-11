@@ -9,9 +9,7 @@ def crypto_hash(*args):
     stringified_args = sorted(map(lambda data: json.dumps(data), args))
 
 
-    print(f'args: {stringified_args}')
     joined_data = ''.join(stringified_args)
-    print(f'joined_data: {joined_data}')
 
     return hashlib.sha256(joined_data.encode('utf-8')).hexdigest()
 
