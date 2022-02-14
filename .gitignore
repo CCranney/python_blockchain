@@ -1,3 +1,5 @@
 __pycache__/
 blockchain-env/
 python_blockchain.egg-info/
+build/
+backend/keys.py
