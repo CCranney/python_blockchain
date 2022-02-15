@@ -18,7 +18,7 @@ setuptools.setup(
         'Intended Audience :: Science/Research',
         "Programming Language :: Python :: 3",
     ],
-    py_modules=['backend','backend.blockchain','backend.util', 'backend.app'],
+    py_modules=['backend','backend.blockchain','backend.util', 'backend.app', 'backend.wallet'],
     packages=setuptools.find_packages(),
     python_requires='>=3.6',
     #license=readfile('LICENSE'),
@@ -33,5 +33,6 @@ setuptools.setup(
         'flask==1.1.1',
         'pubnub==4.1.6',
         'requests==2.22.0',
+        'cryptography==36.0.1',
     ],
 )
